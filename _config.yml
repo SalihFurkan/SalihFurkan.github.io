@@ -1,21 +1,26 @@
 #
-# This file contains configuration flags to customize your site
+# This file contains configuration settings for your Jekyll site
 #
 
 # Name of your site (displayed in the header)
-name: Salih Furkan
+name: Salih Furkan Atici, Ph.D.
 
 # Short bio or description (displayed in the header)
-description: Engineer from Somewhere
+description: Machine Learning Engineer | Video Research Expert | Computer Vision Specialist
 
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+# URL of your avatar or profile pic
+avatar: https://github.com/SalihFurkan/SalihFurkan.github.io/raw/master/images/photo.jpeg
 
-#
-# Flags below are optional
-#
+# Your website URL (e.g. https://sfurkanatici.github.io)
+# Used for Sitemap.xml and your RSS feed
+url: https://SalihFurkan.github.io
 
-# Includes an icon in the footer for each username you enter
+# If you're hosting your site at a Project repository (not your User repository),
+# then set baseurl as the name of your Project repository
+# e.g. /project-name
+baseurl: ""
+
+# Social media presence
 footer-links:
   dribbble:
   email: sfurkanatici@gmail.com
@@ -23,14 +28,13 @@ footer-links:
   flickr:
   github: SalihFurkan
   instagram:
-  linkedin:
+  linkedin: salihfurkanatici
   pinterest:
-  rss: 
+  rss: # just type anything here for a working RSS icon
   twitter: 
-  stackoverflow: 
-  youtube: 
-  googleplus: 
-
+  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  youtube: # channel/<your_long_string> or user/<user-name>
+  googleplus: # anything in your profile username that comes after plus.google.com/
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
@@ -39,7 +43,7 @@ disqus:
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
 
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
+# Your website URL (e.g. https://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
 url:
 
