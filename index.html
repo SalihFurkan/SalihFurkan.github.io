@@ -3,10 +3,29 @@ layout: default
 ---
 
 <div class="posts">
+  <h1>Welcome to My Portfolio</h1>
+  
+  <div class="intro">
+    <p>Hello! I'm <strong>Salih Furkan Atici</strong>, a Machine Learning engineer and researcher with expertise in computer vision and video processing technologies. With experience from Apple and a Ph.D. focusing on neural network solutions, I specialize in designing and implementing cutting-edge algorithms for complex image and video analysis problems.</p>
+    
+    <p>Currently based in Eutin, Schleswig-Holstein, I'm passionate about pushing the boundaries of what's possible with machine learning, particularly in areas like:</p>
+    
+    <ul>
+      <li>Computer Vision & Image Processing</li>
+      <li>Deep Learning Optimization</li>
+      <li>Video Codec Technology</li>
+      <li>Motion Estimation Algorithms</li>
+    </ul>
+    
+    <p>Explore my <a href="/about/">background</a>, <a href="/projects/">projects</a>, or read my latest thoughts below.</p>
+  </div>
+  
+  <h2>Latest Posts</h2>
+  
   {% for post in site.posts %}
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 
       <div class="entry">
         {{ post.excerpt }}
