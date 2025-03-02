@@ -4,78 +4,239 @@
 // Import the original styles from the theme
 @import "{{ site.theme }}";
 
-// Your custom CSS
+// Reset and improved styling
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+// Layout improvements
+.container {
+  max-width: 960px;
+  padding: 0 15px;
+}
+
+// Header improvements
+.site-header {
+  border-bottom: 1px solid #e8e8e8;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.site-avatar {
+  width: 65px;
+  height: 65px;
+  margin-right: 15px;
+  img {
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.site-info {
+  flex: 1;
+}
+
+.site-name {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.site-description {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0 0;
+}
+
+// Navigation styling
+nav {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+  a {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 25px;
+    color: #4183c4;
+    text-decoration: none;
+    
+    &:hover {
+      color: #205081;
+      text-decoration: underline;
+    }
+  }
+}
+
+// Main content improvements
+.posts {
+  margin-top: 30px;
+}
+
 .intro {
   margin: 30px 0;
   padding: 20px;
-  background-color: #f8f8f8;
+  background-color: #f9f9f9;
   border-radius: 5px;
   border-left: 5px solid #4183c4;
 }
 
-.skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 20px 0;
+// Project styling
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  margin: 30px 0;
 }
 
-.skill-item {
-  background-color: #eef;
-  border-radius: 15px;
-  padding: 5px 12px;
-  margin: 5px;
-  font-size: 14px;
+.project-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .project-content {
+    padding: 20px;
+  }
+  
+  h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    
+    span {
+      background-color: #eef;
+      color: #556;
+      border-radius: 15px;
+      padding: 3px 10px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+      font-size: 12px;
+    }
+  }
+  
+  a.project-link {
+    display: inline-block;
+    background-color: #4183c4;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    
+    &:hover {
+      background-color: #205081;
+    }
+  }
 }
 
-h1, h2, h3 {
+// Single project page
+.project-detail {
+  margin-bottom: 50px;
+  
+  .project-header {
+    margin-bottom: 30px;
+    
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    
+    .project-meta {
+      color: #666;
+      font-size: 14px;
+    }
+  }
+  
+  .project-image-large {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 30px;
+  }
+  
+  .project-content {
+    font-size: 16px;
+    line-height: 1.8;
+    
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+    
+    ul, ol {
+      margin-bottom: 25px;
+    }
+    
+    img {
+      max-width: 100%;
+      border-radius: 4px;
+      margin: 20px 0;
+    }
+  }
+}
+
+// Improved typography
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 1.5em 0 0.8em;
   color: #333;
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 32px;
 }
 
-.profile-container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
+h2 {
+  font-size: 26px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
 }
 
-.profile-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-right: 20px;
-  object-fit: cover;
-}
-
-.profile-info {
-  flex: 1;
-}
-
-// Enhanced styling for project cards
-.project-card {
-  margin-bottom: 30px;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+h3 {
+  font-size: 22px;
 }
 
 // Responsive adjustments
-@media (max-width: 640px) {
-  .profile-container {
+@media (max-width: 768px) {
+  .site-header {
     flex-direction: column;
-    text-align: center;
+    align-items: flex-start;
   }
   
-  .profile-image {
-    margin-right: 0;
-    margin-bottom: 20px;
+  .site-avatar {
+    margin-bottom: 15px;
+  }
+  
+  .project-grid {
+    grid-template-columns: 1fr;
   }
 }
