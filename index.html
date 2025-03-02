@@ -2,36 +2,104 @@
 layout: default
 ---
 
-<div class="posts">
-  <h1>Welcome to My Portfolio</h1>
+<div class="container">
+  <header class="page-header">
+    <h1>Welcome to My Portfolio</h1>
+  </header>
   
   <div class="intro">
-    <p>Hello! I'm <strong>Salih Furkan Atici</strong>, a Machine Learning engineer and researcher with expertise in computer vision and video processing technologies. With experience from Apple and a Ph.D. focusing on neural network solutions, I specialize in designing and implementing cutting-edge algorithms for complex image and video analysis problems.</p>
-    
-    <p>Currently based in Eutin, Schleswig-Holstein, I'm passionate about pushing the boundaries of what's possible with machine learning, particularly in areas like:</p>
-    
-    <ul>
-      <li>Computer Vision & Image Processing</li>
-      <li>Deep Learning Optimization</li>
-      <li>Video Codec Technology</li>
-      <li>Motion Estimation Algorithms</li>
-    </ul>
-    
-    <p>Explore my <a href="/about/">background</a>, <a href="/projects/">projects</a>, or read my latest thoughts below.</p>
+    <div class="profile-container">
+      <div class="profile-content">
+        <h2>Salih Furkan Atici, Ph.D.</h2>
+        <p class="subtitle">Machine Learning Engineer • Video Research Expert • Computer Vision Specialist</p>
+        
+        <p>Hello! I'm a machine learning engineer and researcher with expertise in computer vision and video processing technologies. With experience from Apple and a Ph.D. focusing on neural network solutions, I specialize in designing and implementing cutting-edge algorithms for complex image and video analysis problems.</p>
+        
+        <p>Currently based in Eutin, Schleswig-Holstein, I'm passionate about pushing the boundaries of what's possible with machine learning.</p>
+        
+        <div class="cta-buttons">
+          <a href="/about/" class="btn btn-primary">About Me</a>
+          <a href="/projects/" class="btn btn-secondary">View My Projects</a>
+        </div>
+      </div>
+    </div>
   </div>
   
-  <h2>Latest Posts</h2>
-  
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-
-      <div class="entry">
-        {{ post.excerpt }}
+  <section class="featured-projects">
+    <h2>Featured Projects</h2>
+    
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="/api/placeholder/400/220" alt="Input Normalized SGD" class="project-image">
+        <div class="project-content">
+          <h3>Input Normalized SGD</h3>
+          <div class="project-tags">
+            <span>Deep Learning</span>
+            <span>Optimization</span>
+          </div>
+          <p>A novel optimization algorithm improving CNN performance on imbalanced datasets.</p>
+          <a href="/projects/insgd/" class="project-link">Learn More</a>
+        </div>
       </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+      
+      <div class="project-card">
+        <img src="/api/placeholder/400/220" alt="Medical Image Classification" class="project-image">
+        <div class="project-content">
+          <h3>Medical Image Classification</h3>
+          <div class="project-tags">
+            <span>Computer Vision</span>
+            <span>Healthcare</span>
+          </div>
+          <p>Automated classification of CVM stages using deep learning with directional filters.</p>
+          <a href="/projects/cvm-classification/" class="project-link">Learn More</a>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <img src="/api/placeholder/400/220" alt="Video Motion Estimation" class="project-image">
+        <div class="project-content">
+          <h3>Video Motion Estimation</h3>
+          <div class="project-tags">
+            <span>Video Processing</span>
+            <span>Neural Networks</span>
+          </div>
+          <p>CNN models for efficient motion estimation in video codec technologies.</p>
+          <a href="/projects/motion-estimation/" class="project-link">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="latest-posts">
+    <h2>Latest Posts</h2>
+    
+    {% for post in site.posts limit:2 %}
+      <article class="post-preview">
+        <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+        <div class="post-meta">{{ post.date | date: "%B %d, %Y" }}</div>
+        <div class="entry">
+          {{ post.excerpt }}
+        </div>
+        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More →</a>
+      </article>
+    {% endfor %}
+    
+    <a href="/blog/" class="view-all">View All Posts →</a>
+  </section>
+  
+  <section class="contact-section">
+    <h2>Get In Touch</h2>
+    <p>I'm open to research collaborations, consulting opportunities, and interesting projects. Feel free to reach out!</p>
+    <div class="contact-links">
+      <a href="mailto:sfurkanatici@gmail.com" class="contact-link">
+        <span class="icon">✉️</span> Email
+      </a>
+      <a href="https://linkedin.com/in/salihfurkanatici" class="contact-link">
+        <span class="icon">👤</span> LinkedIn
+      </a>
+      <a href="https://github.com/yourusername" class="contact-link">
+        <span class="icon">💻</span> GitHub
+      </a>
+    </div>
+  </section>
 </div>
