@@ -135,3 +135,60 @@ a:hover {
   color: #4169E1;
   text-decoration: none;
 }
+
+/* About Page Header Spacing */
+
+/* Target all headings in the about page */
+.page-content h1, 
+.page-content h2, 
+.page-content h3, 
+.page-content h4, 
+.page-content h5, 
+.page-content h6 {
+  margin-top: 1.8em;
+  margin-bottom: 0.8em;
+  line-height: 1.4;
+}
+
+/* First heading should have less top margin */
+.page-content h1:first-child,
+.page-content h2:first-child,
+.page-content h3:first-child,
+.page-content h4:first-child,
+.page-content h5:first-child,
+.page-content h6:first-child {
+  margin-top: 0.5em;
+}
+
+/* Add specific spacing for each heading level */
+.page-content h1 {
+  margin-bottom: 1em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #eaecef;
+}
+
+.page-content h2 {
+  margin-top: 2em;
+  padding-bottom: 0.3em;
+}
+
+/* Add extra space before new sections */
+.page-content h2 + p {
+  margin-top: 0.8em;
+}
+
+/* Improve paragraph spacing for readability */
+.page-content p {
+  margin-bottom: 1.2em;
+  line-height: 1.6;
+}
+
+/* Adjust list spacing */
+.page-content ul, 
+.page-content ol {
+  margin-bottom: 1.5em;
+}
+
+.page-content li {
+  margin-bottom: 0.5em;
+}
