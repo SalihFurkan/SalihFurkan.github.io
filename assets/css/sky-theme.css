@@ -192,3 +192,300 @@ a:hover {
 .page-content li {
   margin-bottom: 0.5em;
 }
+
+/* Enhanced section styling for Featured Projects and Latest Posts */
+
+/* Common section styling */
+section {
+  margin: 40px 0;
+  padding: 30px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+/* Featured Projects Section */
+.featured-projects {
+  background: linear-gradient(135deg, rgba(100, 181, 246, 0.8) 0%, rgba(30, 136, 229, 0.8) 100%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-projects::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/assets/images/subtle-pattern.png');
+  opacity: 0.05;
+  z-index: 0;
+}
+
+.featured-projects h2 {
+  color: white;
+  position: relative;
+  margin-bottom: 30px;
+  font-size: 2.2em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  padding-bottom: 15px;
+}
+
+.featured-projects h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  position: relative;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 4px solid #4682B4;
+}
+
+.project-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.project-tags span {
+  background-color: #e0f7fa;
+  color: #00838f;
+  padding: 4px 10px;
+  border-radius: 30px;
+  font-size: 0.8em;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.project-link {
+  margin-top: auto;
+  align-self: flex-start;
+  background-color: #1976D2;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #1565C0;
+  color: white;
+}
+
+/* Latest Posts Section */
+.latest-posts {
+  background: linear-gradient(to right, rgba(255, 171, 64, 0.8) 0%, rgba(255, 112, 67, 0.8) 100%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.latest-posts::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/assets/images/dots-pattern.png');
+  opacity: 0.05;
+  z-index: 0;
+}
+
+.latest-posts h2 {
+  color: white;
+  position: relative;
+  margin-bottom: 30px;
+  font-size: 2.2em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  padding-bottom: 15px;
+}
+
+.latest-posts h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.post-preview {
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-preview:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.post-preview h3 {
+  background-color: #ffcc80;
+  margin: 0;
+  padding: 15px 20px;
+  color: #333;
+}
+
+.post-preview .post-meta {
+  color: #757575;
+  font-size: 0.9em;
+  padding: 10px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.post-preview .entry {
+  padding: 15px 20px;
+  color: #555;
+}
+
+.read-more {
+  background-color: #FF9800;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  margin: 0 20px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #F57C00;
+  color: white;
+}
+
+.view-all {
+  display: inline-block;
+  background-color: white;
+  color: #FF7043;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.view-all:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  background-color: #FFFAF7;
+  color: #E64A19;
+  text-decoration: none;
+}
+
+/* Contact Section */
+.contact-section {
+  background: linear-gradient(135deg, rgba(129, 212, 250, 0.85) 0%, rgba(57, 73, 171, 0.85) 100%);
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+  color: white;
+  position: relative;
+  margin-bottom: 30px;
+  font-size: 2.2em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  padding-bottom: 15px;
+}
+
+.contact-section h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.contact-link {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+  background-color: white;
+  color: #3949AB;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+/* Animation for section headings */
+@keyframes slideIn {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+section h2 {
+  animation: slideIn 0.5s ease-out forwards;
+}
