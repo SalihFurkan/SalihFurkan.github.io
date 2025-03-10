@@ -14,45 +14,44 @@ I'm an experienced Machine Learning and Computer Vision engineer with a strong f
 
 ### APPLE — Cupertino
 **Video Research Engineer** *(Sep 2023 – Dec 2024)*
-- Worked in the Platform Architecture team on Video Codec, Motion Estimation, and Color quantization
-- Created and trained Computer Vision Machine Learning models for motion estimation, optical flow and color quantization in PyTorch
-- Designed Motion Estimation Algorithms and developed CNN models optimized for video processing
-- Implemented processing algorithms using C++/Matlab for production environments
+  - Worked in the Platform Architecture team on Video Codec, Motion Estimation, and Color quantization
+  - Created and trained Computer Vision Machine Learning models for motion estimation, optical flow and color quantization in PyTorch
+  - Designed Motion Estimation Algorithms and developed CNN models optimized for video processing
+  - Implemented processing algorithms using C++/Matlab for production environments
 
 ### APPLE — Cupertino
 **PhD Intern** *(Jun 2022 – Sep 2022)*
-- Built Machine Learning models for image processing under research team supervision
-- Collaborated with Platform Architecture team to design CNN models for image super-resolution
+  - Built Machine Learning models for image processing under research team supervision
+  - Collaborated with Platform Architecture team to design CNN models for image super-resolution
 
 ### University of Illinois Chicago
 **Research Assistant** *(Nov 2019 – May 2023)*
-- Formulated novel directional filter methods for X-ray image enhancement
-- Designed CNN models in TensorFlow and PyTorch for medical image classification
-- Developed "INSGD," a novel optimization algorithm to improve CNN performance on imbalanced datasets
-
+  - Formulated novel directional filter methods for X-ray image enhancement
+  - Designed CNN models in TensorFlow and PyTorch for medical image classification
+  - Developed "INSGD," a novel optimization algorithm to improve CNN performance on imbalanced datasets
+  
 ## Education
 
-- **Ph.D. in Electrical and Computer Engineering** — University of Illinois Chicago *(May 2023)*
-  - 2023-2024 College of Engineering Exceptional Research Promise Award
-- **Master of Science in Electrical and Computer Engineering** — University of Illinois Chicago
-- **Bachelor of Science in Electrical and Electronics Engineering** — Bilkent University, Turkey *(Jun 2019)*
+  - **Ph.D. in Electrical and Computer Engineering** — University of Illinois Chicago *(May 2023)*
+    - 2023-2024 College of Engineering Exceptional Research Promise Award
+  - **Master of Science in Electrical and Computer Engineering** — University of Illinois Chicago
+  - **Bachelor of Science in Electrical and Electronics Engineering** — Bilkent University, Turkey *(Jun 2019)*
 
 ## Technical Skills
 
-- **Programming Languages**: Python, C/C++, MATLAB
-- **Frameworks & Libraries**: PyTorch, TensorFlow, HuggingFace, TensorFlow Lite, ONNX, OpenCV
-- **Tools & Platforms**: Git, Linux, Edge Computing
-- **Research Focus**: Neural Networks, Computer Vision, Video Processing, Machine Learning Optimization
+  - **Programming Languages**: Python, C/C++, MATLAB
+  - **Frameworks & Libraries**: PyTorch, TensorFlow, HuggingFace, TensorFlow Lite, ONNX, OpenCV
+  - **Tools & Platforms**: Git, Linux, Edge Computing
+  - **Research Focus**: Neural Networks, Computer Vision, Video Processing, Machine Learning Optimization
 
 ## Research Impact
 
 I've contributed to the field of machine learning and computer vision through multiple peer-reviewed publications, advancing areas such as:
 
-- Automated medical image classification systems
-- Novel optimization techniques for neural networks
-- Collaborative fusion of vision transformers and CNNs
-- Quantum-classical approaches to convolutional layers
+  - Automated medical image classification systems
+  - Novel optimization techniques for neural networks
+  - Collaborative fusion of vision transformers and CNNs
 
-For a complete list of my publications, please visit my [Projects](/projects/) page or view my profile on [Google Scholar](https://scholar.google.com/).
+For a complete list of my publications, please visit my [Projects](/projects/) page or view my profile on [Google Scholar](https://scholar.google.com/citations?user=H-iPUtwAAAAJ&hl=en).
 
-Feel free to reach out via [LinkedIn](https://linkedin.com/in/salihfurkanatici) or [email](mailto:sfurkanatici@gmail.com) for collaboration opportunities or to discuss potential projects.
+Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/salih-furkan-atici-4b865915b/) or [email](mailto:sfurkanatici@gmail.com) for collaboration opportunities or to discuss potential projects.
