@@ -1,3 +1,50 @@
+/* Style the navigation in the header */
+.site-header nav {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.site-header nav a {
+  margin: 0;
+  padding: 8px 15px;
+  color: #2C3E50;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.site-header nav a:hover {
+  color: #1E88E5;
+  text-decoration: none;
+}
+
+/* Add separator between nav links */
+.site-header nav a:not(:last-child)::after {
+  content: '|';
+  position: absolute;
+  right: -2px;
+  color: #ccc;
+}
+
+/* Highlight effect on hover */
+.site-header nav a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  height: 2px;
+  background-color: #1E88E5;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.site-header nav a:hover::before {
+  transform: scaleX(1);
+}
+
 /* Make Latest Posts match Featured Projects */
 .latest-posts {
   background: linear-gradient(135deg, rgba(100, 181, 246, 0.8) 0%, rgba(30, 136, 229, 0.8) 100%);
@@ -31,50 +78,8 @@
   margin-bottom: 15px;
 }
 
-/* Improved navigation with separators */
-.site-navigation {
-  display: flex;
-  justify-content: center;
-  margin: 15px 0;
-  padding: 0;
-}
-
-.site-navigation a {
-  margin: 0;
-  padding: 8px 15px;
-  color: #2C3E50;
-  font-weight: 500;
-  text-decoration: none;
-  transition: all 0.3s ease;
+/* Fix potential position issues with post preview */
+.post-preview {
   position: relative;
-}
-
-.site-navigation a:hover {
-  color: #1E88E5;
-  text-decoration: none;
-}
-
-/* Add separator between nav links */
-.site-navigation a:not(:last-child)::after {
-  content: '|';
-  position: absolute;
-  right: -2px;
-  color: #ccc;
-}
-
-/* Highlight effect on hover */
-.site-navigation a::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 15px;
-  right: 15px;
-  height: 2px;
-  background-color: #1E88E5;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-
-.site-navigation a:hover::before {
-  transform: scaleX(1);
+  z-index: 1;
 }
