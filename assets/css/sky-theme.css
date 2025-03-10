@@ -1,8 +1,6 @@
-/* Style the navigation in the header */
+/* Fix navigation styling */
 .site-header nav {
   margin-top: 10px;
-  display: flex;
-  justify-content: center;
 }
 
 .site-header nav a {
@@ -17,7 +15,6 @@
 
 .site-header nav a:hover {
   color: #1E88E5;
-  text-decoration: none;
 }
 
 /* Add separator between nav links */
@@ -45,10 +42,45 @@
   transform: scaleX(1);
 }
 
-/* Make Latest Posts match Featured Projects */
+/* Make Latest Posts match Featured Projects but keep original styling */
 .latest-posts {
   background: linear-gradient(135deg, rgba(100, 181, 246, 0.8) 0%, rgba(30, 136, 229, 0.8) 100%);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.latest-posts::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/assets/images/dots-pattern.png');
+  opacity: 0.05;
+  z-index: 0;
+}
+
+.latest-posts h2 {
+  color: white;
+  position: relative;
+  margin-bottom: 30px;
+  font-size: 2.2em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  padding-bottom: 15px;
+}
+
+.latest-posts h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
 }
 
 /* Fix Read More button */
@@ -71,15 +103,27 @@
   color: white;
 }
 
-/* Improve post spacing to ensure button is accessible */
+/* Ensure post-preview elements are properly displayed */
+.post-preview {
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 .post-preview .entry {
   padding: 15px 20px;
   color: #555;
   margin-bottom: 15px;
 }
 
-/* Fix potential position issues with post preview */
-.post-preview {
-  position: relative;
-  z-index: 1;
+/* Preserving existing background styles */
+body {
+  background: linear-gradient(180deg, #87CEEB 0%, #B0E0E6 50%, #E0FFFF 100%);
+  color: #333;
+  min-height: 100vh;
 }
