@@ -42,9 +42,61 @@
   transform: scaleX(1);
 }
 
-/* Make Latest Posts match Featured Projects but keep original styling */
+/* Animation for gradient shift */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Featured Projects Section */
+.featured-projects {
+  background: linear-gradient(45deg, #87CEEB, #1E90FF, #4682B4);
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-projects::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/assets/images/subtle-pattern.png');
+  opacity: 0.05;
+  z-index: 0;
+}
+
+.featured-projects h2 {
+  color: white;
+  position: relative;
+  margin-bottom: 30px;
+  font-size: 2.2em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  padding-bottom: 15px;
+}
+
+.featured-projects h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* Latest Posts Section */
 .latest-posts {
-  background: linear-gradient(135deg, rgba(100, 181, 246, 0.8) 0%, rgba(30, 136, 229, 0.8) 100%);
+  background: linear-gradient(45deg, #87CEEB, #1E90FF, #4682B4);
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   color: white;
   position: relative;
@@ -122,7 +174,6 @@
 }
 
 /* Sky Theme Background Styles */
-
 body {
   background: linear-gradient(180deg, #87CEEB 0%, #B0E0E6 50%, #E0FFFF 100%);
   color: #333;
@@ -203,11 +254,33 @@ body {
   text-decoration: none;
 }
 
+/* Contact Section */
 .contact-section {
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 8px;
-  padding: 20px;
-  margin-top: 30px;
+  background: linear-gradient(45deg, #87CEEB, #1E90FF, #4682B4);
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.contact-section h2 {
+  color: white;
+  position: relative;
+  margin-bottom: 30px;
+  font-size: 2.2em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  padding-bottom: 15px;
+}
+
+.contact-section h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
 }
 
 /* Animated clouds in the background */
@@ -260,8 +333,6 @@ a:hover {
 }
 
 /* About Page Header Spacing */
-
-/* Target all headings in the about page */
 .page-content h1, 
 .page-content h2, 
 .page-content h3, 
@@ -273,7 +344,6 @@ a:hover {
   line-height: 1.4;
 }
 
-/* First heading should have less top margin */
 .page-content h1:first-child,
 .page-content h2:first-child,
 .page-content h3:first-child,
@@ -283,7 +353,6 @@ a:hover {
   margin-top: 0.5em;
 }
 
-/* Add specific spacing for each heading level */
 .page-content h1 {
   margin-bottom: 1em;
   padding-bottom: 0.3em;
@@ -295,18 +364,15 @@ a:hover {
   padding-bottom: 0.3em;
 }
 
-/* Add extra space before new sections */
 .page-content h2 + p {
   margin-top: 0.8em;
 }
 
-/* Improve paragraph spacing for readability */
 .page-content p {
   margin-bottom: 1.2em;
   line-height: 1.6;
 }
 
-/* Adjust list spacing */
 .page-content ul, 
 .page-content ol {
   margin-bottom: 1.5em;
@@ -317,54 +383,11 @@ a:hover {
 }
 
 /* Enhanced section styling for Featured Projects and Latest Posts */
-
-/* Common section styling */
 section {
   margin: 40px 0;
   padding: 30px;
   border-radius: 12px;
   transition: all 0.3s ease;
-}
-
-/* Featured Projects Section */
-.featured-projects {
-  background: linear-gradient(135deg, rgba(100, 181, 246, 0.8) 0%, rgba(30, 136, 229, 0.8) 100%);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  color: white;
-  position: relative;
-  overflow: hidden;
-}
-
-.featured-projects::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('/assets/images/subtle-pattern.png');
-  opacity: 0.05;
-  z-index: 0;
-}
-
-.featured-projects h2 {
-  color: white;
-  position: relative;
-  margin-bottom: 30px;
-  font-size: 2.2em;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  padding-bottom: 15px;
-}
-
-.featured-projects h2::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 80px;
-  height: 4px;
-  background-color: white;
-  border-radius: 2px;
 }
 
 .project-grid {
@@ -437,56 +460,6 @@ section {
   color: white;
 }
 
-/* Latest Posts Section */
-.latest-posts {
-  background: linear-gradient(to right, rgba(255, 171, 64, 0.8) 0%, rgba(255, 112, 67, 0.8) 100%);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  color: white;
-  position: relative;
-  overflow: hidden;
-}
-
-.latest-posts::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('/assets/images/dots-pattern.png');
-  opacity: 0.05;
-  z-index: 0;
-}
-
-.latest-posts h2 {
-  color: white;
-  position: relative;
-  margin-bottom: 30px;
-  font-size: 2.2em;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  padding-bottom: 15px;
-}
-
-.latest-posts h2::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 80px;
-  height: 4px;
-  background-color: white;
-  border-radius: 2px;
-}
-
-.post-preview {
-  background-color: white;
-  border-radius: 10px;
-  margin-bottom: 25px;
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 .post-preview:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
@@ -549,33 +522,6 @@ section {
   text-decoration: none;
 }
 
-/* Contact Section */
-.contact-section {
-  background: linear-gradient(135deg, rgba(129, 212, 250, 0.85) 0%, rgba(57, 73, 171, 0.85) 100%);
-  color: white;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.contact-section h2 {
-  color: white;
-  position: relative;
-  margin-bottom: 30px;
-  font-size: 2.2em;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  padding-bottom: 15px;
-}
-
-.contact-section h2::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 80px;
-  height: 4px;
-  background-color: white;
-  border-radius: 2px;
-}
-
 .contact-links {
   display: flex;
   flex-wrap: wrap;
@@ -612,4 +558,3 @@ section {
 section h2 {
   animation: slideIn 0.5s ease-out forwards;
 }
-
