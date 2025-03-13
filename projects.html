@@ -1,24 +1,42 @@
----
-layout: default
-title: Projects
-permalink: /projects/
----
-
-<div class="container">
-  <header class="page-header">
-    <h1>Projects</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/sky-theme.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <nav>
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/projects/' | relative_url }}">Projects</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="{{ '/contact/' | relative_url }}">Contact</a>
+    </nav>
   </header>
-  
-  <div class="project-list">
-    {% for project in site.projects %}
-      <div class="project-item">
-        <img src="{{ project.image }}" alt="{{ project.title }} image" class="project-image">
-        <div class="project-content">
-          <h2>{{ project.title }}</h2>
-          <p>{{ project.abstract }}</p>
-          <a href="{{ project.url }}" class="read-more">Read More →</a>
+
+  <div class="container">
+    <header class="page-header">
+      <h1>{{ page.title }}</h1>
+    </header>
+    
+    <div class="project-list">
+      {% for project in site.projects %}
+        <div class="project-item">
+          <img src="{{ project.image }}" alt="{{ project.title }} image" class="project-image">
+          <div class="project-content">
+            <h2>{{ project.title }}</h2>
+            <p>{{ project.abstract }}</p>
+            <a href="{{ project.url }}" class="read-more">Read More →</a>
+          </div>
         </div>
-      </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
   </div>
-</div>
+
+  <footer class="site-footer">
+    <p>&copy; {{ site.time | date: "%Y" }} {{ site.name }}</p>
+  </footer>
+</body>
+</html>
