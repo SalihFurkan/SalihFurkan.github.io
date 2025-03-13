@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: projects
 title: "Fully automated determination of the cervical vertebrae maturation stages using deep learning with directional filters"
 abstract: "This paper explores the application of deep learning techniques for the automated classification of medical images, specifically focusing on cervical vertebrae maturation stages."
 image: "/images/projects/cvm_classification2.PNG"
