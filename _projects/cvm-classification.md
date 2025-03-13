@@ -1,12 +1,15 @@
 ---
-layout: page
-title: Automated CVM Stage Classification
+layout: project
+title: Fully automated determination of the cervical vertebrae maturation stages using deep learning with directional filters
+image: "/images/projects/INSGD_diag2.png"
 permalink: /projects/cvm-classification/
+categories: [Deep Learning, Medical Image Processing, Image Classification]
+tags: [CNN, Directional Filters, Medical Image Processing]
 ---
 
 # Automated Cervical Vertebrae Maturation (CVM) Stage Classification
 
-![CVM Classification System](/images/projects/cvm-banner.jpg)
+![CVM Classification System](/images/projects/cvm_classification2.PNG)
 
 ## Overview
 
