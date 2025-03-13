@@ -444,6 +444,57 @@ a:hover {
   margin-bottom: 0.5em;
 }
 
+/* Add these styles for the projects page */
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.project-item {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-image {
+  width: 100%;
+  height: 200px; /* Set a fixed height for consistency */
+  object-fit: cover; /* Ensure the image covers the entire area while maintaining aspect ratio */
+  object-position: center; /* Center the image */
+  display: block; /* Ensures proper rendering */
+  border-bottom: 4px solid #4682B4;
+}
+
+.project-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.read-more {
+  background-color: #1976D2;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: auto;
+  transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #1565C0;
+  color: white;
+}
+
 /* Enhanced section styling for Featured Projects and Latest Posts */
 section {
   margin: 40px 0;
