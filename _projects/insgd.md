@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: project
 title: "Input Normalized Stochastic Gradient Descent Training for Deep Neural Networks"
-author: "Salih Atici, Hongyi Pan, Ahmet Enis Cetin, Esra Tureyen, Omer Morgun"
-date: 2022-12-01
+abstract: "A novel optimization algorithm improving CNN performance using input features."
+image: "/images/projects/INSGD_diag2.png"
 permalink: /projects/insgd/
 categories: [Deep Learning, Optimization]
 tags: [CNN, SGD, Machine Learning, Neural Networks]
@@ -10,9 +10,8 @@ tags: [CNN, SGD, Machine Learning, Neural Networks]
 
 # Input Normalized Stochastic Gradient Descent Training for Deep Neural Networks
 
-**Authors:** Salih Atici, Hongyi Pan, Ahmet Enis Cetin (University of Illinois Chicago); Esra Tureyen, Omer Morgun (Bilkent University)  
-**Date:** December 2022  
-**Contact:** \{hpan21, satici2, aecyy\}@uic.edu, esra.tureyen@bilkent.edu.tr, morgul@ee.bilkent.edu.tr
+**Authors:** Salih Atici, Hongyi Pan, Ahmet Enis Cetin (University of Illinois Chicago)
+**Contact:** \{hpan21, satici2, aecyy\}@uic.edu
 
 ## Abstract
 In this paper, we propose Input Normalized Stochastic Gradient Descent (INSGD), a novel optimization algorithm inspired by the Normalized Least Mean Squares (NLMS) algorithm from adaptive filtering. INSGD applies $\ell_1$ and $\ell_2$-based normalizations to the learning rate in stochastic gradient descent, using the input vector to the neuron rather than the error term. Tested on ResNet-20, Vision Transformer, MobileNetV3, WResNet-18, ResNet-50, and a custom CNN, INSGD improves accuracy on benchmark datasets: ResNet-20 on CIFAR-10 from 92.57% to 92.67%, MobileNetV3 on CIFAR-10 from 90.83% to 91.13%, WResNet-18 on CIFAR-100 from 78.24% to 78.47%, and ResNet-50 on ImageNet-1K from 75.60% to 75.92%.
