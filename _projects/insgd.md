@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: projects
 title: "Input Normalized Stochastic Gradient Descent Training for Deep Neural Networks"
 abstract: "A novel optimization algorithm improving CNN performance using input features."
 image: "/images/projects/INSGD_diag2.png"
