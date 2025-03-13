@@ -128,6 +128,31 @@
   background-color: white;
   border-radius: 2px;
 }
+/* Add these CSS rules to improve line spacing on the about page */
+
+/* Line spacing for paragraphs */
+.page-content p {
+  line-height: 1.8; /* Increase line height for better readability */
+  margin-bottom: 1.2em; /* Add some margin at the bottom of each paragraph */
+}
+
+/* Line spacing for headings */
+.page-content h1,
+.page-content h2,
+.page-content h3,
+.page-content h4,
+.page-content h5,
+.page-content h6 {
+  margin-top: 1.5em; /* Add some margin at the top of each heading */
+  margin-bottom: 0.8em; /* Add some margin at the bottom of each heading */
+  line-height: 1.4; /* Increase line height for better readability */
+}
+
+/* Ensure the styles apply specifically to the about page */
+.page-content {
+  padding: 20px; /* Add some padding to the content area */
+}
+
 
 /* Latest Posts Section */
 .latest-posts {
