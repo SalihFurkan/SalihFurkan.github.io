@@ -9,7 +9,7 @@ tags: [CNN, Directional Filters, Medical Image Processing]
 
 # Automated Cervical Vertebrae Maturation (CVM) Stage Classification
 
-![CVM Classification System](/images/cvm_classification.PNG)
+![CVM Classification System](/images/cvm_classification.png)
 
 ## Overview
 
