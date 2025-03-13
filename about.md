@@ -15,20 +15,19 @@ I'm an experienced Machine Learning and Computer Vision engineer with a strong f
 ### APPLE — Cupertino
 **Video Research Engineer** *(Sep 2023 – Dec 2024)*
   - Worked in the Platform Architecture team on Video Codec, Motion Estimation, and Color quantization
-  - Created and trained Computer Vision Machine Learning models for motion estimation, optical flow and color quantization in PyTorch
-  - Designed Motion Estimation Algorithms and developed CNN models optimized for video processing
+  - Created and trained Computer Vision Machine Learning models in PyTorch
   - Implemented processing algorithms using C++/Matlab for production environments
 
 ### APPLE — Cupertino
 **PhD Intern** *(Jun 2022 – Sep 2022)*
   - Built Machine Learning models for image processing under research team supervision
-  - Collaborated with Platform Architecture team to design CNN models for image super-resolution
+  - Collaborated with Platform Architecture team to design CNN models
 
 ### University of Illinois Chicago
 **Research Assistant** *(Nov 2019 – May 2023)*
   - Formulated novel directional filter methods for X-ray image enhancement
-  - Designed CNN models in TensorFlow and PyTorch for medical image classification
-  - Developed "INSGD," a novel optimization algorithm to improve CNN performance on imbalanced datasets
+  - Designed CNN models in TensorFlow and PyTorch for medical image processing tasks
+  - Developed "INSGD," a novel optimization algorithm to improve CNN performance
   
 ## Education
 
