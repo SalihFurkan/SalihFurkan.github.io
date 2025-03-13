@@ -45,13 +45,13 @@ Designed a deep learning model for automated classification of medical images wi
 
 1. S. F. Atici, H. Pan, and A. E. Cetin, "Input Normalized Stochastic Gradient Descent Training of Deep Neural Networks," Accepted to Transactions on Mach. Learn. Res. (2024). [Link](https://openrevie[...]
 
-2. S. F. Atici, R. Ansari, V. Allareddy, O. Suhaym, A. E. Cetin, and M. H. Elnagar, "Fully automated determination of the cervical vertebrae maturation stages using deep learning with directional filt[...]
+2. S. F. Atici, R. Ansari, V. Allareddy, O. Suhaym, A. E. Cetin, and M. H. Elnagar, “Fully automated determination of the cervical vertebrae maturation stages using deep learning with directional filters,” Plos one, vol. 17, no. 7, p. e0269198, 2022
 
-3. S. F. Atici, R. Ansari, V. Allareddy, O. Suhaym, A. E. Cetin, and M. H. Elnagar, "AggregateNet: A Deep Learning Model for Automated Classification of Cervical Vertebrae Maturation Stages" Orthodont[...]
+3. S. F. Atici, R. Ansari, V. Allareddy, O. Suhaym, A. E. Cetin, and M. H. Elnagar, “AggregateNet: A Deep Learning Model for Automated Classification of Cervical Vertebrae Maturation Stages” Orthodontics & Craniofacial Research, DOI: 10.1111/ocr.12644
 
-4. S. F. Atici, H. Pan, M. Elnagar, A. Veerasathpurush, O. Suhaym, R. Ansari, A. E. Cetin, "Classification of the Cervical Vertebrae Maturation (CVM) Stages Using the Tripod Network," ICASSP 2023 - 20[...]
+4. S. F. Atici, H. Pan, M. Elnagar, A. Veerasathpurush, O. Suhaym, R. Ansari, A. E. Cetin, “Classification of the Cervical Vertebrae Maturation (CVM) Stages Using the Tripod Network,” ICASSP 2023 - 2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Rhodes Island, Greece, 2023, pp. 1-5
 
-5. S. F. Atici, R. Ansari, V. Allareddy, O. Suhaym, A. E. Cetin, and M. H. Elnagar, "A Collaborative Fusion of Vision Transformers and Convolutional Neural Networks in Classifying Cervical Vertebrae M[...]
+5. S. F. Atici, R. Ansari, V. Allareddy, O. Suhaym, A. E. Cetin, and M. H. Elnagar, “A Collaborative Fusion of Vision Transformers and Convolutional Neural Networks in Classifying Cervical Vertebrae Maturation Stages,” 2023 30th IEEE International Conference on Electronics, Circuits and Systems (ICECS), Istanbul, Türkiye, 2023, pp. 1-4
 
 For a complete list of publications, please visit my [Google Scholar profile](https://scholar.google.com/citations?user=H-iPUtwAAAAJ&hl=en) or contact me directly.
 
