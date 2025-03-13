@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Fully automated determination of the cervical vertebrae maturation stages using deep learning with directional filters
-image: "/images/projects/INSGD_diag2.png"
+image: "/images/projects/cvm_classification2.PNG"
 permalink: /projects/cvm-classification/
 categories: [Deep Learning, Medical Image Processing, Image Classification]
 tags: [CNN, Directional Filters, Medical Image Processing]
