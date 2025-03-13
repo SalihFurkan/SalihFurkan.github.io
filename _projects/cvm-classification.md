@@ -1,109 +1,35 @@
 ---
 layout: project
-title: Fully automated determination of the cervical vertebrae maturation stages using deep learning with directional filters
+title: "Fully automated determination of the cervical vertebrae maturation stages using deep learning with directional filters"
+abstract: "This paper explores the application of deep learning techniques for the automated classification of medical images, specifically focusing on cervical vertebrae maturation stages."
 image: "/images/projects/cvm_classification2.PNG"
-permalink: /projects/cvm-classification/
-categories: [Deep Learning, Medical Image Processing, Image Classification]
-tags: [CNN, Directional Filters, Medical Image Processing]
+permalink: /projects/cvm_classification_dirfilt/
+categories: [Deep Learning, Medical Imaging]
+tags: [Medical Imaging, Deep Learning, Neural Networks]
+pdf: "/papers/journal.pone.0269198.pdf"
 ---
 
-# Automated Cervical Vertebrae Maturation (CVM) Stage Classification
+# Deep Learning Approaches for Automated Medical Image Classification
 
-![CVM Classification System](/images/cvm_classification.png)
+## Abstract
+This paper explores the application of deep learning techniques for the automated classification of medical images, specifically focusing on cervical vertebrae maturation stages. The proposed methods leverage convolutional neural networks (CNNs) to achieve state-of-the-art performance on limited medical datasets.
 
-## Overview
+## Introduction
+Medical imaging plays a crucial role in the diagnosis and treatment of various medical conditions. Automated classification of medical images can significantly enhance the efficiency and accuracy of medical practitioners. In this paper, we present deep learning approaches for the classification of cervical vertebrae maturation (CVM) stages using custom CNN architectures.
 
-This project represents a significant advancement in orthodontic diagnostics through the development of a fully automated system for determining Cervical Vertebrae Maturation (CVM) stages using deep learning with novel directional filters.
+## Key Achievements
+- Developed a fully automated system for determining CVM stages using custom CNN architectures.
+- Designed novel directional filters to highlight features in X-ray images.
+- Achieved state-of-the-art classification accuracy on limited medical datasets.
 
-## Publications
+## Methodology
+The proposed methodology involves the design and training of convolutional neural networks (CNNs) to classify CVM stages. The CNN models are trained on a dataset of X-ray images, and various pre-processing techniques are applied to enhance the image quality and highlight salient features.
 
-This research resulted in multiple peer-reviewed publications:
+## Results
+The experimental results demonstrate that the proposed deep learning approaches significantly improve the classification accuracy of CVM stages compared to traditional methods. The developed system achieves high accuracy on limited medical datasets and shows potential for clinical applications.
 
-1. "Fully automated determination of the cervical vertebrae maturation stages using deep learning with directional filters," **PLOS ONE** (2022)
-2. "AggregateNet: A Deep Learning Model for Automated Classification of Cervical Vertebrae Maturation Stages," **Orthodontics & Craniofacial Research** (2023)
-3. "Classification of the Cervical Vertebrae Maturation (CVM) Stages Using the Tripod Network," **IEEE ICASSP** (2023)
+## Conclusion
+This paper presents effective deep learning approaches for the automated classification of medical images, specifically for CVM stages. The proposed methods leverage CNNs to achieve high classification accuracy, demonstrating the potential of deep learning in medical imaging applications.
 
-## Clinical Significance
-
-CVM staging is critical in orthodontics for:
-- Determining optimal timing for growth modification therapies
-- Predicting remaining craniofacial growth potential
-- Planning orthodontic and orthopedic interventions
-
-Traditional manual assessment is:
-- Time-consuming
-- Subject to inter-observer variability
-- Requires specialized training
-
-## Technical Approach
-
-### Novel Directional Filters
-
-One of the key innovations in this project was the development of specialized directional filters to enhance relevant features in lateral cephalometric radiographs:
-
-![Directional Filter Examples](/images/projects/directional-filters.jpg)
-
-These filters:
-- Highlight vertebral morphological features relevant to staging
-- Enhance edges and contours in specific orientations
-- Improve feature extraction for subsequent deep learning models
-
-### Neural Network Architecture
-
-We developed multiple specialized architectures:
-
-1. **AggregateNet**: A custom CNN architecture designed specifically for CVM classification
-2. **Tripod Network**: A multi-path neural network that processes the same input through different pathways
-3. **Vision Transformer Fusion**: A hybrid approach combining CNN and transformer components
-
-The best-performing model achieved:
-- 93.7% accuracy on the test set
-- 91.2% agreement with expert orthodontist consensus
-- Robust performance across various image qualities and patient demographics
-
-## Model Architecture
-
-![AggregateNet Architecture](/images/projects/aggregatenet.jpg)
-
-*The AggregateNet architecture combines multiple feature extraction pathways with different receptive fields to capture relevant morphological characteristics at various scales.*
-
-## Results Visualization
-
-![CVM Stage Predictions](/images/projects/cvm-predictions.jpg)
-
-*Sample predictions showing input radiographs, enhanced images after directional filtering, and final stage classifications.*
-
-## Clinical Validation
-
-The system was validated on a dataset of over 1,000 lateral cephalometric radiographs with ground truth annotations from three experienced orthodontists. The system demonstrated:
-
-- High agreement with expert consensus (Cohen's kappa = 0.89)
-- Consistent performance across different imaging conditions
-- Robust to common image artifacts and variations
-
-## Implementation Details
-
-The system was developed using:
-- PyTorch for model architecture and training
-- Custom C++ implementation for deployment
-- ONNX for model conversion and optimization
-- Cloud-based API for clinical integration
-
-## Future Directions
-
-Current and future work includes:
-1. Development of a continuous CVM staging system (beyond discrete stages)
-2. Integration with growth prediction algorithms
-3. Extension to 3D CBCT imaging data
-4. Mobile application development for point-of-care assessment
-
-## Collaborators
-
-This research was conducted in collaboration with:
-- Department of Orthodontics, University of Illinois Chicago
-- Department of Electrical and Computer Engineering, University of Illinois Chicago
-- Various clinical partners providing validation data
-
-## Contact
-
-For more information or potential collaborations, please [contact me](mailto:sfurkanatici@gmail.com).
+## Full Paper
+For more details, you can access the full paper [here](/papers/journal.pone.0269198.pdf).
